@@ -35,6 +35,8 @@ select first_name, last_name, salary from employees where salary <
 select first_name, last_name,department_id from employees where department_id =
 (select department_id from employees where first_name = 'lisa' and last_name ='ozer')
 --10.) Display all the employees in the same department as Martha Sullivan and that make more than TJ Olson.
+
+NICE WORK!
 select first_name, last_name,department_id, salary from employees where department_id =
 (select department_id from employees where first_name = 'Martha' and last_name ='Sullivan')
 and salary > (select salary from employees where first_name = 'tj' and last_name = 'olson')order by salary desc
